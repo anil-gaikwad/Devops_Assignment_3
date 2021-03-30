@@ -1,0 +1,29 @@
+version: "3.4"
+services:
+        node1:
+                image: mysql/mysql-cluster
+                container_name: "node1"
+                ports:
+                        - "4411:4442"
+                stdin_open: true          
+                        
+                
+        node2:
+                image: mysql/mysql-cluster
+                container_name: "node2"
+                ports:
+                        - "4422:4444"
+                stdin_open: true
+                        
+
+
+        node3:
+                image: mysql/mysql-cluster
+                container_name: "node3"
+                ports:
+                        - "4433:4445"
+                stdin_open: true                       
+     
+
+            
+            
